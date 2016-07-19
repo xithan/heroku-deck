@@ -1,10 +1,9 @@
 source 'http://rubygems.org'
-
+ruby '2.2.2'
 
 gem 'wagn'
 
-
-gem 'mysql2', '0.3.20'
+gem 'pg'
 # Use Unicorn or Thin as server
 # gem 'unicorn'
 # gem 'thin'

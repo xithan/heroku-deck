@@ -3,6 +3,7 @@ ruby '2.2.2'
 
 gem 'wagn'
 
+gem 'carrierwave'
 gem 'pg'
 # Use Unicorn or Thin as server
 # gem 'unicorn'

@@ -154,6 +154,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  carrierwave
   pg
   wagn
 

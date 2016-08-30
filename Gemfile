@@ -4,7 +4,6 @@ ruby '2.3.1'
 gem 'wagn', path: "vendor/wagn"
 gem 'pg'
 gem 'rails_12factor'
-gem 'pry-byebug'
 gem 'fog'
 gem 'fog-aws'
 gem "delayed_job_active_record"
@@ -13,5 +12,5 @@ Dir.glob('mod/**{,/*/**}/Gemfile').each do |gemfile|
   instance_eval File.read(gemfile)
 end
 
-gem "mysql2"
+# gem "mysql2"
 

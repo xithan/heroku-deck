@@ -1,18 +1,16 @@
 source 'http://rubygems.org'
-ruby '2.2.2'
+ruby '2.3.1'
 
-gem 'wagn'
-
-gem 'carrierwave'
+gem 'wagn', :git => 'https://github.com/xithan/wagn', branch: 'heroku'
 gem 'pg'
-# Use Unicorn or Thin as server
-# gem 'unicorn'
-# gem 'thin'
+gem 'rails_12factor'
+gem 'fog'
+gem 'fog-aws'
+gem "carrierwave", git: "https://github.com/carrierwaveuploader/carrierwave",
+    branch: "master"
+gem "delayed_job_active_record"
 
-
-
-
-Dir.glob( 'mod/**{,/*/**}/Gemfile' ).each do |gemfile|
+Dir.glob('mod/**{,/*/**}/Gemfile').each do |gemfile|
   instance_eval File.read(gemfile)
 end
 

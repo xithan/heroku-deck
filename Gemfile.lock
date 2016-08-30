@@ -8,10 +8,8 @@ GIT
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
 
-GIT
-  remote: https://github.com/xithan/wagn
-  revision: 58d70d6612d14acc0286be9f7f94c4f72d19956e
-  branch: heroku
+PATH
+  remote: vendor/wagn
   specs:
     card (1.19.0)
       bootstrap-kaminari-views (~> 0)
@@ -243,6 +241,7 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     multi_json (1.12.1)
+    mysql2 (0.4.4)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -318,6 +317,7 @@ DEPENDENCIES
   delayed_job_active_record
   fog
   fog-aws
+  mysql2
   pg
   rails_12factor
   wagn!

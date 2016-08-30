@@ -4,10 +4,9 @@ ruby '2.3.1'
 gem 'wagn', path: "vendor/wagn"
 gem 'pg'
 gem 'rails_12factor'
+gem 'pry-byebug'
 gem 'fog'
 gem 'fog-aws'
-gem "carrierwave", git: "https://github.com/carrierwaveuploader/carrierwave",
-    branch: "master"
 gem "delayed_job_active_record"
 
 Dir.glob('mod/**{,/*/**}/Gemfile').each do |gemfile|

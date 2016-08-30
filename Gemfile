@@ -13,4 +13,3 @@ Dir.glob('mod/**{,/*/**}/Gemfile').each do |gemfile|
 end
 
 # gem "mysql2"
-

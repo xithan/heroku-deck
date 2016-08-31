@@ -67,5 +67,9 @@ module Hero
         # option is needed
       }
     }
+    config.action_dispatch.default_headers.merge!({
+      'Access-Control-Allow-Origin' => '*',
+      'Access-Control-Request-Method' => 'GET'
+    })
   end
 end
